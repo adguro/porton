@@ -1,0 +1,24 @@
+{
+  "name": "porton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adguro/porton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adguro/porton/issues"
+  },
+  "homepage": "https://github.com/adguro/porton#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
