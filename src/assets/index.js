@@ -12,6 +12,9 @@ const db = firebaseApp.firestore();
 console.log("Inica firesotre");
 
 var x = document.getElementById("geo");
+var press = document.getElementById("press");
+var enable = document.getElementById("enable");
+
 function getLocation(){
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -25,4 +28,11 @@ function showPosition(position){
         longitude: position.coords.longitude,
         active: true
     });
+}
+
+function enableButton(){
+    
+    const habilita = () => {
+        press.hidden = true;
+    }
 }
