@@ -27,11 +27,20 @@
 
     <h1>Abrir/Cerrar portón</h1>
 
-    <button class="button" onclick="getLocation()">
+    <label class="switchBtn">
+        <input id="activo" type="checkbox" onclick="activar()">
+        <div id="textoActivo" class="slide round">Activar</div>
+    </label>
+    
+    <button id="boton" class="button" onclick="getLocation()">
         <img src="./assets/icons8-timbre-de-la-puerta-50.png" alt="Click Me">
         
     </button>
 
+    <!-- <label class="switchBtn">
+        <input type="checkbox">
+        <div class="slide">Filter On</div>
+    </label> -->
 
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>

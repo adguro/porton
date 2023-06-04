@@ -14,6 +14,9 @@ console.log("Inica firesotre");
 var x = document.getElementById("geo");
 var press = document.getElementById("press");
 var enable = document.getElementById("enable");
+let activo = document.getElementById("activo");
+let textoActivo = document.getElementById("textoActivo");
+let boton = document.getElementById("boton");
 
 function getLocation(){
     if (navigator.geolocation){
@@ -28,6 +31,10 @@ function showPosition(position){
         longitude: position.coords.longitude,
         active: true
     });
+    boton.style.display = 'none';
+    textoActivo.innerText = "Activar";
+    activo.checked = false;
+
 }
 
 function enableButton(){
@@ -35,4 +42,17 @@ function enableButton(){
     const habilita = () => {
         press.hidden = true;
     }
+}
+
+function activar(){
+
+    if (activo.checked){
+        boton.style.display = 'block';
+        textoActivo.innerText = "Desactivar";
+    } else {
+        boton.style.display = 'none';
+        textoActivo.innerText = "Activar";
+    }
+     
+
 }
