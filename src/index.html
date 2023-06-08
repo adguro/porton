@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portón</title>
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <!-- <h1>Abrir/Cerrar portón</h1>
-    <button onclick="getLocation()" class="boton">Presionar</button> -->
-    <!-- Rectangular switch -->
-    <!-- <h1>Habilitar botón</h1>   
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-    </label> -->
-
-    <!-- Rounded switch -->
-
-    <!-- <label class="switch">
-    
-    <input id="enable" type="checkbox">
-    <span class="slider round"></span>
-    </label> -->
 
     <h1>Abrir/Cerrar portón</h1>
 
@@ -31,20 +18,17 @@
         <input id="activo" type="checkbox" onclick="activar()">
         <div id="textoActivo" class="slide round">Activar</div>
     </label>
-    
-    <button id="boton" class="button" onclick="getLocation()">
+
+    <button id="boton" class="button buttonload" onclick="getLocation()">
         <img src="./assets/icons8-timbre-de-la-puerta-50.png" alt="Click Me">
-        
     </button>
 
-    <!-- <label class="switchBtn">
-        <input type="checkbox">
-        <div class="slide">Filter On</div>
-    </label> -->
+    <p id="parrafo"></p>
 
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
     <script src="./assets/index.js">
     </script>
 </body>
+
 </html>
