@@ -80,6 +80,8 @@ function showPosition(position) {
         boton.disabled = false;
         activo.disabled = false;
 
+        textoActivo.style.backgroundColor = "#ccc";
+
         boton.style.display = 'none';
         textoActivo.innerText = "Activar";
         activo.checked = false;
