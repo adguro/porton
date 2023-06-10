@@ -123,3 +123,9 @@ input {
   width: 3px;
   height: 3px;
 }
+
+button img:hover {
+
+  display: none;
+
+}
